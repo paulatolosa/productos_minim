@@ -155,4 +155,18 @@ public class ProductManagerImpl implements ProductManager {
         }
         return null;
     }
+
+    // necessari per la rest api
+    public int numOrders(){
+        return pendingOrders.size();
+    }
+    public void addUser(String userId){
+        User user = new User(userId);
+        users.add(user);
+    }
+    public List<User> getUsers(){
+        return users;
+    }
 }
+
+

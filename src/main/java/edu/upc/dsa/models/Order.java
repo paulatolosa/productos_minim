@@ -8,6 +8,8 @@ public class Order {
     User user;
     List<Item>  items;
 
+    public Order(){}
+
     public Order(String id, User user, List<Item> items) {
         this.id = id;
         this.user = user;
